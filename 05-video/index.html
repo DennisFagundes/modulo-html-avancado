@@ -8,12 +8,31 @@
 </head>
 <body>
     <h1>Video</h1>
-
+    <br>
+    <br>
+    <h2>Tabela de formatos de videos</h2>
+    <div>
+        <img src="./images/tabela de formatos de videos.png" alt="tabela de formatos de videos">
+    </div>
+    <br>
+    <br>
     <video src="./videos/video.mp4" width="200" controls autoplay muted loop></video>
     <br>
     <br>
     
     <!-- USANDO UMA CAPA "THUMB" TIPO YOUTUBE -->
     <video src="./videos/video.mp4" width="200" controls muted loop poster="./images/thumb.jpg"></video>
+    <br>
+    <br>    
+    <br>
+    <!-- ADICIONANDO VIDEOS COM FORMATAÇÃO DIFERENTES -->
+
+    <video controls width="300">
+        <source src="./videos/video.mp4" type="video/mp4">
+        <source src="./videos/video.ogg" type="video/ogg">
+        <source src="./videos/video.webm" type="video/webm">
+
+        <p>Esse navegador não tem suporte a tag video.</p>
+    </video>
 </body>
 </html>
